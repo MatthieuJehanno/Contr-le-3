@@ -28,9 +28,31 @@
     </script>
 </head>
 <body>
- Votre nom :  
-        <?php
-            echo "<select id='lstUsers' onchange='GetAllRegions()'>";
+<body>
+Votre nom
+    <br>
+    <br>
+	<input type="text" id="nom">
+    <br>
+    <br>
+	<input type="button" value="connexion" id="connexion">
+	<div id="region"></div><br>
+	<div id="ville"></div><br>
+</body>
+</html>
+  
+      
+      
+      
+          
+      
+      
+      
+      
+      
+      
+  <?php
+            /*echo "<select id='lstUsers' onchange='GetAllRegions()'>";
             
             foreach($lesUsers as $user)
             {
