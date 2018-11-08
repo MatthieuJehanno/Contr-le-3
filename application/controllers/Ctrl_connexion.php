@@ -21,5 +21,4 @@ class Ctrl_Connexion extends CI_Controller {
        
 }
 
-
-?>
+?> 
