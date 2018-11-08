@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
      <title>notation region</title>
     <script type="text/javascript" src="./JQuery/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="./JS/Fonctions.js"></script>
@@ -17,7 +16,7 @@
                         GetAllRegions);
                     }
                 );
-                $('#lstDivisions').change
+                $('#lstRegions').change
                 (
                     function()
                     {
@@ -31,7 +30,7 @@
 <body>
    Votre nom :
         <?php
-            echo "<select id='lstUsers' onchange='GetAllRegion()'>";
+            echo "<select id='lstUsers' onchange='GetAllRegions()'>";
             
             foreach($lesUsers as $user)
             {
@@ -42,7 +41,7 @@
         
 
     </div><br><br>
-Liste des regions
+Liste des regions :
        <?php
             echo "<select id='lstRegion' onchange=')'>";
             
