@@ -8,19 +8,18 @@ class Ctrl_Connexion extends CI_Controller {
             $data['lesUsers'] = $this->Model_connexion->GetAllUsers();
             $this->load->view('view_connexion',$data);
 
-            //afficher les regions
-            $this->load->model("Model_regions");
-            $data['lesDivisions'] = $this->Model_regions->GetAllRegions($data['lesRegions'][1]->idUser);
-            $this->load->view('view_division',$data);
+    
     }
    
     public function  GetAllRegions()
 	{
-         
-            $idSaison = $_GET['idSaison'];
+            $idSaison = $_GET['idUser'];
             $this->load->model("Model_regions");
             $data['lesRegions'] = $this->Model_regions->GetAllRegions($idUser);
             $this->load->view('view_regions',$data);
     }
        
 }
+
+
+?>

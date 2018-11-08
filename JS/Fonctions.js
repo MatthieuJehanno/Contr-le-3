@@ -1,5 +1,5 @@
 
-function GetAllRegion()
+function GetAllRegions()
 {  
     $.ajax
     (
@@ -9,8 +9,8 @@ function GetAllRegion()
             data:"idUser="+$("#lstUsers").val(),
             success:function(data)
             {
-                $("#divRegions").empty();
-                $("#divRegions").append(data);
+                $("#divRegion").empty();
+                $("#divRegion").append(data);
             },
         }
     );

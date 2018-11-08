@@ -13,7 +13,7 @@
                 (
                     function()
                     {
-                        GetAllRegions);
+                        GetAllRegions();
                     }
                 );
                 $('#lstRegions').change
@@ -24,11 +24,11 @@
                     }
                 );
             }
-        ); */
+        );
     </script>
 </head>
 <body>
-   Votre nom :
+ Votre nom :  
         <?php
             echo "<select id='lstUsers' onchange='GetAllRegions()'>";
             
@@ -43,7 +43,7 @@
     </div><br><br>
 Liste des regions :
        <?php
-            echo "<select id='lstRegion' onchange=')'>";
+            echo "<select id='lstRegions' onchange=')'>";
             
             foreach($lesRegions as $region)
             {
